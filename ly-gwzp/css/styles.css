@@ -1,0 +1,600 @@
+@charset "utf-8";
+/* 首页样式start */
+/*轮播图*/
+/*轮播图*/
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner .banner-list {
+    position: relative;
+}
+
+.banner .banner-list li {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.banner .banner-list li.show {
+    display: block;
+}
+
+.banner .banner-list li img {
+    width: 100%;
+    height: auto;
+}
+
+.banner .prev, .banner .next {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 50%;
+    margin-top: -28px;
+    background: center/cover no-repeat;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.banner .prev {
+    left: 20px;
+    background-image: url("../images/btn-left.png");
+}
+
+.banner .next {
+    right: 20px;
+    background-image: url("../images/btn-right.png");
+}
+
+.banner .tab {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -32px;
+}
+
+.banner .tab ul li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.banner .tab ul li.active {
+    background-color: #ff6600;
+}
+
+.content .content-list {
+    justify-content: space-between;
+    width: 100%;
+    margin: 48px auto;
+}
+
+.content .content-list li {
+    display: inline-block;
+    width: 370px;
+    height: 400px;
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    padding: 36px 20px;
+    margin-right: 37px;
+    vertical-align: top;
+    color: #1f2d3d;
+    transition: 300ms linear;
+    -moz-transition: 300ms linear;
+    -webkit-transition: 300ms linear;
+    -o-transition: 300ms linear;
+    -ms-transition: 300ms linear;
+}
+
+.content .content-list li:last-child {
+    margin-right: 0;
+}
+
+.content .content-list li .bg {
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+.content .content-list li .bg p {
+    color: #1f2d3d;
+}
+
+.content .content-list li .bg .icon-bg {
+    margin: 10px auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #cccccc;
+    background: center no-repeat;
+}
+
+.content .content-list li:nth-child(1) .bg .icon-bg {
+    background-image: url("../images/icon1.png");
+}
+
+.content .content-list li:nth-child(2) .bg .icon-bg {
+    background-image: url("../images/icon2.png");
+}
+
+.content .content-list li:nth-child(3) .bg .icon-bg {
+    background-image: url("../images/icon3.png");
+}
+
+.content .content-list li .bg .sub-icon-bg {
+    background: center no-repeat;
+    height: 54px;
+}
+
+.content .content-list li:nth-child(1) .bg .sub-icon-bg {
+    background-image: url("../images/value.png");
+}
+
+.content .content-list li:nth-child(2) .bg .sub-icon-bg {
+    background-image: url("../images/attiude.png");
+}
+
+.content .content-list li:nth-child(3) .bg .sub-icon-bg {
+    background-image: url("../images/style.png");
+}
+
+.content .content-list li .list-desc {
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "微软雅黑";
+}
+
+/* 首页样式end */
+
+/* 校园招聘start */
+.wrapper .showImg {
+    width: 100%;
+}
+
+.wrapper .showImg img {
+    width: 100%;
+}
+
+.wrapper dl .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrapper dl .title .main-title {
+    width: 70px;
+    margin: 30px auto 0;
+    font-size: 30px;
+    line-height: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #1262a9;
+    color: #000;
+}
+
+.wrapper dl .title .desc {
+    font-size: 16px;
+    color: #cccccc;
+}
+
+.wrapper dl dd .sub-menu {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #cccccc;
+    background: #fbfbfb
+}
+
+.wrapper dl dd .sub-menu .menu-list .menu-title {
+    width: 210px;
+    background-color: #1262a9;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    line-height: 60px;
+    color: #ffffff;
+    padding-left: 30px;
+}
+
+.wrapper dl dd .sub-menu .menu-list .menu-content {
+    position: absolute;
+    display: none;
+    left: 210px;
+    top: 0;
+    height: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding-left: 62px;
+    padding-top: 55px;
+    width: 990px;
+}
+
+.wrapper dl dd .sub-menu .move .menu-title {
+    color: #1262a9;
+    background-color: #fbfbfb;
+}
+
+.wrapper dl dd .sub-menu .move .menu-content {
+    display: block;
+    background-color: #fbfbfb;
+    overflow: auto;
+}
+
+.wrapper dl dd .sub-menu .menu-list .menu-content .row-1,
+.wrapper dl dd .sub-menu .menu-list .menu-content .row-2 {
+    margin-bottom: 15px;
+}
+
+.wrapper dl dd .sub-menu .menu-list .menu-content h2 {
+    display: inline-block;
+    color: #1262a9;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.wrapper dl dd .sub-menu .menu-list .menu-content span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #3b4551;
+}
+
+.wrapper dl dd .sub-menu .menu-list .menu-content h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3b4551;
+    margin: 26px 0 14px;
+}
+
+.wrapper dl dd .sub-menu .menu-list .menu-content p {
+    line-height: 32px;
+    font-size: 14px;
+    color: #3b4551;
+}
+
+.wrapper .school-enrollment {
+    width: 900px;
+    margin: auto;
+}
+
+.wrapper .school-enrollment dd {
+    position: relative;
+}
+
+.wrapper .school-enrollment dd .bg {
+    width: 250px;
+    height: 680px;
+    margin: 0 auto;
+}
+
+.wrapper .school-enrollment dd .content {
+    position: static;
+}
+
+.wrapper .school-enrollment dd .content > div::after {
+    position: absolute;
+    top: 10px;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+}
+
+/* .wrapper .school-enrollment dd .content .box1::after{
+    border-left-color: #ffffff;
+    right: 0;
+    margin-right: -20px;
+} */
+.wrapper .school-enrollment dd .content .desc {
+    font-size: 14px;
+    line-height: 30px;
+    float: left;
+}
+
+.wrapper .school-enrollment dd .content .img {
+    float: right;
+}
+
+.wrapper .school-enrollment dd .content .desc .school {
+    font-weight: bold;
+}
+
+.wrapper .school-enrollment dd .content .left, .wrapper .school-enrollment dd .content .right {
+    position: absolute;
+    width: 310px;
+    box-shadow: 0 0 5px #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.wrapper .school-enrollment dd .content .left {
+    left: 0;
+}
+
+.wrapper .school-enrollment dd .content .right {
+    right: 0;
+}
+
+.wrapper .school-enrollment dd .content .box1 {
+    top: -10px;
+}
+
+.wrapper .school-enrollment dd .content .box2 {
+    top: 175px;
+}
+
+.wrapper .school-enrollment dd .content .box3 {
+    top: 320px;
+}
+
+.wrapper .school-enrollment dd .content .box4 {
+    top: 470px;
+}
+
+.wrapper .school-enrollment dd .content .box5 {
+    top: 640px;
+}
+
+.wrapper .school-enrollment dd .content .box6 {
+    top: 830px;
+}
+
+.wrapper .school-enrollment dd .content .box7 {
+    top: 973px;
+}
+
+.wrapper .school-enrollment dd .content .box8 {
+    top: 1120px;
+}
+
+.wrapper .network-application dd {
+    width: 1000px;
+    margin: 20px auto 60px;
+    font-size: 14px;
+}
+
+.wrapper .network-application dd p {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.trangle_left1 {
+    border: 10px solid;
+    border-color: transparent transparent transparent #f0f0f0;
+    width: 0;
+    position: absolute;
+    top: 10px;
+    right: -20px;
+}
+
+.trangle_left2 {
+    border: 10px solid;
+    border-color: transparent transparent transparent #fff;
+    width: 0;
+    position: absolute;
+    top: 10px;
+    right: -18px;
+}
+
+.trangle_right1 {
+    border: 10px solid;
+    border-color: transparent #f0f0f0 transparent transparent;
+    width: 0;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+}
+
+.trangle_right2 {
+    border: 10px solid;
+    border-color: transparent #fff transparent transparent;
+    width: 0;
+    position: absolute;
+    top: 10px;
+    left: -18px;
+}
+
+/* 校园招聘end */
+
+/* 社会招聘start */
+.wrapper dl.recruitment-position dd .sub-menu {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #cccccc;
+}
+
+.wrapper dl.recruitment-position dd .sub-menu .menu-list .menu-title {
+    width: 220px;
+    background-color: #1262a9;
+    font-size: 16px;
+    line-height: 80px;
+    color: #ffffff;
+    padding-left: 26px;
+}
+
+.wrapper dl.recruitment-position dd .sub-menu .menu-list .menu-content {
+    position: absolute;
+    display: none;
+    left: 220px;
+    top: 0;
+    width: 980px;
+    height: 100%;
+    font-size: 12px;
+    padding: 25px 0 0 32px;
+    box-sizing: border-box;
+}
+
+.wrapper dl.recruitment-position dd .sub-menu .move .menu-title {
+    color: #1262a9;
+    background-color: #fbfbfb;
+}
+
+.wrapper dl.recruitment-position dd .sub-menu .move .menu-content {
+    display: block;
+    overflow: auto;
+}
+
+.wrapper dl.recruitment-position dd .sub-menu .menu-list .menu-content .row-1,
+.wrapper dl.recruitment-position dd .sub-menu .menu-list .menu-content .row-2 {
+    margin-bottom: 15px;
+}
+
+.wrapper dl.recruitment-position dd .sub-menu .menu-list .menu-content .row-2,
+.wrapper dl.recruitment-position dd .sub-menu .menu-list .menu-content .row3 {
+    width: 485px;
+    float: left;
+}
+
+.wrapper dl.recruitment-position dd .sub-menu .menu-list .menu-content .row-2 {
+    width: 460px;
+    padding-right: 30px;
+}
+
+.wrapper dl.recruitment-position dd .sub-menu .menu-list .menu-content h2 {
+    display: inline-block;
+    color: #1262a9;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.wrapper dl.recruitment-position dd .sub-menu .menu-list .menu-content span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.wrapper dl.recruitment-position dd .sub-menu .menu-list .menu-content h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3b4551;
+    margin: 0 0 13px 0;
+}
+
+/* 社会招聘end */
+
+/* 走进联奕start */
+/* 走进联奕---联奕介绍 */
+.zjly_wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+/* #main_content{
+    background-color: orange;
+} */
+.zjly_wrapper .img_text {
+    margin-bottom: 25px;
+}
+
+.zjly_wrapper .img_text p {
+    font-size: 14px;
+    color: #3b4551;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.zjly_wrapper .star_text {
+    padding: 0 50px;
+    width: 100%;
+}
+
+.zjly_wrapper .star_text ul {
+    width: 100%;
+}
+
+.zjly_wrapper .star_text ul li {
+    width: 33.33%;
+    float: left;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #3b4551;
+}
+
+.zjly_wrapper .star_text ul li img {
+    margin-right: 5px;
+}
+
+/* 走进联奕---企业氛围 */
+.zjly_wrapper .qyfw_info {
+    height: 40px;
+    font-size: 14px;
+}
+
+/* 走进联奕---薪酬福利 */
+.zjly_wrapper .xcfl_img {
+    padding: 70px 0px;
+    text-align: center;
+}
+
+/* 走进联奕---职业发展 */
+.zjly_wrapper .zyfz_img {
+    padding: 45px 0px;
+}
+
+.zjly_wrapper .zyfz_img img {
+    width: 100%;
+}
+
+/* --------------走进联奕共用样式start------------- */
+/* 带边框tab栏 */
+.zjly_wrapper .tab_box_list {
+    width: 1200px;
+    padding: 20px 0px;
+    height: 70px;
+    background-color: #ffffff;
+}
+
+.zjly_wrapper .tab_box_list ul li {
+    float: left;
+    width: 25%;
+}
+
+.zjly_wrapper .tab_box_list ul li a {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.zjly_wrapper .tab_box_list ul li.selected a {
+    border: 1px solid #2169ac;
+    color: #2169ac;
+    font-weight: 600;
+}
+
+/* 带蓝色左边框的样式 */
+.zjly_wrapper .border_left_title {
+    color: #1262a9;
+    height: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.left_border_bg {
+    display: inline-block;
+    height: 17px;
+    width: 4px;
+    background-color: #1262a9;
+    margin-right: 8px;
+    transform: translateY(24%);
+    vertical-align: top;
+}
+
+/* --------------走进联奕共用样式end------------- */
+
+/* 走进联奕end */
+
+.zjly_wrapper .img_text .w40b {
+    width: 38%;
+}
+
+.zjly_wrapper .img_text .w60b {
+    width: 62%;
+}
